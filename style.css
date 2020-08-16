@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+svg {
+  cursor: pointer;
+}
+
 body {
   background-color: rgb(244, 245, 246);
 }
@@ -32,14 +36,9 @@ header {
   position: relative;
 }
 
-svg:first-child {
+#header-logo {
   width: 395.6px;
   fill: white;
-}
-
-svg:last-child {
-  fill: red;
-  width: 236px;
 }
 
 @media screen and (max-width: 991px) {
@@ -144,7 +143,17 @@ nav > ul:first-child > li:nth-last-child(2) {
 #search {
   border: none;
   outline: none;
+  box-shadow: none;
   max-width: 65px;
+}
+
+#search:focus,
+#search:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 65px;
+  z-index: 0;
 }
 
 .fa-search {
@@ -895,6 +904,11 @@ input[type='email'] {
 /******* SUBSCRIBE SECTION END  *******/
 
 /******* FOOTER START  *******/
+
+#footer-logo {
+  fill: red;
+  width: 236px;
+}
 
 #footer-logo-row {
   border-bottom: 1px solid #d9d9d9;
