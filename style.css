@@ -25,8 +25,6 @@ body > div {
 
 img {
   border-radius: 0% !important;
-  /* width: 100%;
-  height: auto; */
 }
 
 /******* HEADER START *******/
@@ -42,7 +40,7 @@ header {
 }
 
 @media screen and (max-width: 991px) {
-  svg {
+  #header-logo {
     width: 132px;
   }
 }
